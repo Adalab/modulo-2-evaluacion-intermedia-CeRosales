@@ -6,31 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
     <title>Ev. intermedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-   
-      
-
+    <main class="main">
+      <div class="tittle">Dados y apuestas</div>
+      <div class="intro">Introduce aquí tu jugada</div>
       <form class="form" action="">
-        <select
-          class="js-selectNumber"
-          name=""
-          id=""
-          placeholder="Qué número apuestas del 1 al 6?"
-        >
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
+        <select class="js-selectNumber select" name="" id="">
+          <option value="" disabled selected hidden>
+            ¿Qué numero apuestas del 1 al 6?
+          </option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
         </select>
-        <input type="text" placeholder="¿Cuánto apuestas?" />
+        <select class="select" placeholder="¿Cuánto apuestas?">
+          <option value="" isabled selected hidden>
+            Selecciona una opción
+          </option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
         <button class="js-btn button">Jugar</button>
       </form>
-      <div>Vamos a jugar!</div>
-      <div class="js-win collapsed">Has ganado el doble de lo apostado</div>
-      <div class="js-lose collapsed">Has perdido lo apostado</div>
+
+      <div class="intro">Vamos a jugar!</div>
+      <div class="js-win collapsed">Has ganado el doble de lo apostado!!!!</div>
+      <div class="js-lose collapsed">Has perdido lo apostado!!!!</div>
+      <div class="class50">Saldo: 50</div>
+      <div class="class100 collapsed">Saldo: 100</div>
     </main>
 
     <script src="./js/main.js"></script>
