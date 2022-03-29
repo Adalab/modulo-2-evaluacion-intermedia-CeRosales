@@ -38,11 +38,15 @@ function getMatch() {
     if (number === numAle) {
         lose.classList.add('collapsed');
         win.classList.remove('collapsed');
+        saldo50.classList.add('collapsed');
+        saldo100.classList.remove('collapsed');
         
 
     } else {
         win.classList.add('collapsed');
         lose.classList.remove('collapsed');
+        saldo100.classList.add('collapsed');
+        saldo50.classList.remove('collapsed');
     }
 };
 
@@ -56,6 +60,8 @@ btn.addEventListener('click', getMatch);
     if (number === numAle) {
         saldo50.classList.add('collapsed');
         saldo100.classList.remove('collapsed');
+    } else {
+        saldo100.classList.add('collapsed');
     }
 }*/
 

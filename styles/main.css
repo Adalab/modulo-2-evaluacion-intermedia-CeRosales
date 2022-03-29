@@ -34,4 +34,8 @@
 .button {
   height: 50px;
   width: 100px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: black;
+  color: white;
 }
