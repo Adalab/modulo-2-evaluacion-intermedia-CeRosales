@@ -25,9 +25,11 @@ function getRandomNumber(max) {
 }
 
 
-
+const saldoSeleccionado = document.querySelector('.js-saldo');
+const saldo = saldoSeleccionado.value;
 const saldo50 = document.querySelector('.class50');
 const saldo100 = document.querySelector('.class100');
+const saldoWin = document.queryCommandValue('.classWin');
 //acertar números
 
 function getMatch() {
@@ -38,15 +40,13 @@ function getMatch() {
     if (number === numAle) {
         lose.classList.add('collapsed');
         win.classList.remove('collapsed');
-        saldo50.classList.add('collapsed');
-        saldo100.classList.remove('collapsed');
+        
         
 
     } else {
         win.classList.add('collapsed');
         lose.classList.remove('collapsed');
-        saldo100.classList.add('collapsed');
-        saldo50.classList.remove('collapsed');
+      
     }
 };
 
@@ -57,13 +57,16 @@ btn.addEventListener('click', getMatch);
 /* si gana cambia a 100 si pierde a 50 */
 
 /*function saldo() {
-    if (number === numAle) {
+    if (saldo === 50 && number === numAle) {
         saldo50.classList.add('collapsed');
         saldo100.classList.remove('collapsed');
-    } else {
+    } else if (saldo === 100 && number === numAle {
         saldo100.classList.add('collapsed');
+        saldoWin.classList.remove('collapsed);
+    } else {
+
     }
-}*/
+}
 
 
-
+btn.addEventListener('click', saldo);*/
